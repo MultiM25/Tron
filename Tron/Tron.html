@@ -1,0 +1,40 @@
+<!Doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tron</title>
+    <link id="pagestyle" rel="stylesheet" href="style.css" type="text/css">
+	<script src="script.js">
+    </script>
+    </head>
+	<body>
+
+		<div class = "box">
+			<canvas id="canvas" width="800" height="590" >
+				Votre navigateur ne prends pas en charge la balise canvas.
+			</canvas>
+		</div>
+        <div class="box">
+        <div class="scores_joueur_b" ><p class ="scor1" id="score_1"></p></div>
+        <div class="scores_joueur_r" ><p class ="scor2" id ="score_2"></p></div>
+        </div>
+		<div class="box"><button class="btn" id="commencer">DEMARRER</button>
+		<br>
+        <button class="btn" id="pause" type="button" name="button">Pause</button>
+        <br>
+
+        <button class="btn" id="myBtn">Changez Raccourcis</button>
+        </div>
+		<p id="gagnant"></p>
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <label for="input" id="titre"></label>
+        
+        <input id="input" type="text" onkeydown="touche(event)" onclick="affiche()">
+      </div>
+
+    </div>
+    
+	</body>
+</html>
